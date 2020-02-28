@@ -1,13 +1,11 @@
 const axios = require('axios');
-require('dotenv').config();
 
 const api = {
 	getUser(username) {
-		const queryURL = `https://api.github.com/users/${username}`;
-		return axios.get(queryURL);
+		return axios.get(
+			`https://api.github.com/users/${username}/repos?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}&per_page=100`
+		);
 	},
 };
-axios.get("queryURL").then(function(res) {
-	console.log(username);
-});
+
 module.exports = api;
