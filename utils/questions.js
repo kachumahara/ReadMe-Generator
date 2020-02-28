@@ -1,4 +1,4 @@
-var questions = [
+const questions = [
 	{
 		type: 'input',
 		name: 'YourName',
@@ -30,7 +30,7 @@ var questions = [
 		message: 'Project instructions and how to use it:',
 	},
 	{
-		type: 'input',
+		type: 'list',
 		name: 'license',
 		message: 'Your chosen license:',
 	},

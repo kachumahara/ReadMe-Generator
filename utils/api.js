@@ -7,7 +7,7 @@ const api = {
 			.get(
 				`https://api.github.com/users/${username}`
 			)
-			.catch(erroe => {
+			.catch(error => {
 				console.log("no user", err);
 				process.exit(1);
 			});
