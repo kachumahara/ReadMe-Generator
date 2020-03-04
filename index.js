@@ -1,31 +1,27 @@
+require("dotenv").config();
 const inquirer = require('inquirer');
 const fs = require('fs');
 const api = require('./utils/api');
 const questions = require('./utils/questions.js');
-const markdown = require(`./utils/generateMarkdown.js`);
+const generateMarkdown = require(`./utils/generateMarkdown.js`);
 const path = require("path")
+const writeFileSync = util.promisify(fs.writeFile);
 
 
+async function  init() {
+  try {
+    const unserInput = await inquirer.prompt (questions);
+    const { data: gitInfo } = await api.getUser(userInput.username);
+    const readme = generateMardown(userInput, gitInfo)
+    await writeFileSync("newReadMe.md". readme);
+  }
+  catch (err) {
+    console.log(err)
+  }
+};
+
+   
+    
+  
 
 
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
-}
-
-function init() {
-    inquirer
-    .prompt(questions)
-    .then(({Username, color}) => {
-      //console.log("DATA USERNAME" , Username)
-      api.getUser(Username)
-        .then(function(res) {
-          console.log(res.data);
-     return generateMarkdown({color, ...res.data})
-      })
-        .catch(function (error){
-            console.log(error);
-        });
-    });
-}
-
-init();
