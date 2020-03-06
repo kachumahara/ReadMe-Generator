@@ -2,15 +2,15 @@ const questions = [
 
 	{
 		type: 'input',
-		name: 'Username',
+		name: 'username',
 		message: 'What is your GitHub username?',
 	},
-	{
-		type: 'list',
-		name: 'Color',
-		message: 'What is your favorite color?',
-		choices: ["blue", "red", "brown", "yellow"]
-	},
+	// {
+	// 	type: 'list',
+	// 	name: 'Color',
+	// 	message: 'What is your favorite color?',
+	// 	choices: ["blue", "red", "brown", "yellow"]
+	// },
 	// {
 	// 	type: 'input',
 	// 	name: 'ProjectTitle',
