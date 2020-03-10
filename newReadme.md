@@ -1,11 +1,11 @@
 
   ### My name is Kenneth A
 
-  # undefined
+  # Weather app
 
   ## Description
 
-  undefined
+  it presents weather condition and a 5 day weather forecast
 
   ## Table of Contents
 
@@ -22,12 +22,12 @@
 
   ## Usage
 
-  undefined
+  it gives accurate information
 
   ## License
 
-  THis project is licensed under the undefined
-  <img src="https://img.shields.io/badge/License-undefined-orange" alt="badge"/>
+  THis project is licensed under the MIT
+  <img src="https://img.shields.io/badge/License-MIT-orange" alt="badge"/>
 
   ## Contributing
 
