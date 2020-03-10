@@ -1,19 +1,9 @@
-require("dotenv").config();
 const axios = require("axios");
 
-function getUser(username) {
-        
-            axios.get(
-                `https://api.github.com/users/${username}`
-            )
-            .then( answers => {
-
-                console.log(answers)
-
-            })
+const api = {
+    getUser(username) {
+        const queryURL = `https://api.github.com/users/${username}`
+        return axios.get(queryURL);
     }
-getUser("kachumahara")
-
-module.exports = {
-    getUser: getUser
-}
+};
+module.exports = api;
