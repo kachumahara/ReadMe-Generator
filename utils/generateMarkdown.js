@@ -1,6 +1,8 @@
 function generateMarkdown(userInput, gitInfo) {
 
   return `
+  ### My name is ${gitInfo.name}
+
   # ${userInput.title}
 
   ## Description
