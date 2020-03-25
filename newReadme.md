@@ -1,11 +1,11 @@
 
   ### My name is Kenneth A
 
-  # Weather app
+  # weather dashboard
 
   ## Description
 
-  it presents weather condition and a 5 day weather forecast
+  weather situtation
 
   ## Table of Contents
 
@@ -22,7 +22,7 @@
 
   ## Usage
 
-  it gives accurate information
+  about weather
 
   ## License
 
